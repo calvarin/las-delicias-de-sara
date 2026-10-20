@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#bdd5ff">
+  <title>Las Delicias de Sara</title>
+  <link rel="stylesheet" href="estilos.css">
+  <script src="productos.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="app">
+    <header>
+      <img src="imagenes/logo-sara.jpg" alt="Chef Sara">
+      <div>
+        <h1>Las Delicias de Sara</h1>
+        <p>Restaurante</p>
+      </div>
+      <span id="total">0,00 €</span>
+    </header>
+    <nav id="nav" aria-label="Categorías"></nav>
+    <div class="products-scroll" id="productsScroll">
+      <main id="grid"></main>
+    </div>
+    <footer>
+      <button id="clear" class="muted">Vaciar</button>
+      <button id="showQr" class="muted" aria-haspopup="dialog">Carta digital</button>
+      <button id="view">Ver comanda</button>
+    </footer>
+  </div>
+  <div id="toast" role="status" aria-live="polite"></div>
+
+  <dialog id="qrDialog" aria-labelledby="qrTitle">
+    <div class="head">
+      <h2 id="qrTitle">Carta digital</h2>
+      <button id="closeQr" aria-label="Cerrar carta digital">✕</button>
+    </div>
+    <img src="imagenes/carta-qr.jpg" alt="Código QR de la carta digital de Las Delicias de Sara">
+    <p>Escanea el código con la cámara de otro móvil o tablet para consultar el menú.</p>
+    <button id="doneQr" class="action">Volver al restaurante</button>
+  </dialog>
+
+  <dialog id="dialog" aria-labelledby="title">
+    <div class="head">
+      <h2 id="title">Tu comanda</h2>
+      <button id="close" aria-label="Cerrar">✕</button>
+    </div>
+    <div id="orderScroll">
+      <div id="order"></div>
+      <div id="ticket" class="receipt"></div>
+    </div>
+    <div class="bottom">
+      <div id="sum" class="sum"></div>
+      <div class="actions">
+        <button id="back" class="action muted" hidden>Volver</button>
+        <button id="payTpv" class="action" hidden>Pagar con TPV</button>
+        <button id="pay" class="action">Cobrar</button>
+      </div>
+    </div>
+  </dialog>
+
+  <dialog id="paymentDialog" aria-labelledby="paymentTitle">
+    <div class="head">
+      <h2 id="paymentTitle">Pago con tarjeta</h2>
+      <button id="closePayment" aria-label="Cerrar TPV">✕</button>
+    </div>
+    <div class="terminal-label">LAS DELICIAS DE SARA</div>
+    <div class="screen" id="paymentScreen">
+      <div class="merchant">Total a pagar</div>
+      <div id="paymentAmount" class="amount"></div>
+      <div id="paymentStatus" aria-live="polite">Acerca tu tarjeta</div>
+      <p id="paymentHint">Toca el símbolo para acercar la tarjeta.</p>
+      <button id="tapCard" class="contactless waiting" aria-label="Acercar tarjeta al lector contactless">
+        <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" aria-hidden="true">
+          <path d="M28 40 Q38 50 28 60 M41 29 Q61 50 41 71 M55 18 Q86 50 55 82 M69 7 Q111 50 69 93"/>
+        </svg>
+        <span>Acercar tarjeta</span>
+      </button>
+      <div id="paymentFeedback" aria-hidden="true"></div>
+    </div>
+    <div class="card" id="fakeCard">
+      <small>TARJETA DE SARA</small>
+      <div class="chip"></div>
+      <small>•••• •••• •••• 1234</small>
+    </div>
+    <div class="terminal-actions">
+      <button id="cancelPayment" class="action muted">Cancelar</button>
+      <button id="donePayment" class="action" hidden>Volver al ticket</button>
+    </div>
+  </dialog>
+</body>
+</html>
