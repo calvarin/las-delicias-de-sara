@@ -100,7 +100,7 @@ const products = [
   },
   {
     "id": "P015",
-    "name": "Ketchup",
+    "name": "Kétchup",
     "category": "Salsas",
     "priceCents": 50,
     "spriteIndex": 14
@@ -135,7 +135,7 @@ const products = [
   },
   {
     "id": "P020",
-    "name": "Macarrones boloñesa",
+    "name": "Macarrones a la boloñesa",
     "category": "Primeros",
     "priceCents": 510,
     "spriteIndex": 19
@@ -248,112 +248,112 @@ const products = [
   {
     "id": "P036",
     "name": "Tarta",
-    "category": "Postres",
+    "category": "Postres y cafés",
     "priceCents": 300,
     "spriteIndex": 35
   },
   {
     "id": "P037",
-    "name": "Donut",
-    "category": "Postres",
+    "name": "Dónut",
+    "category": "Postres y cafés",
     "priceCents": 210,
     "spriteIndex": 36
   },
   {
     "id": "P038",
     "name": "Gofre",
-    "category": "Postres",
+    "category": "Postres y cafés",
     "priceCents": 150,
     "spriteIndex": 37
   },
   {
     "id": "P039",
     "name": "Helado",
-    "category": "Postres",
+    "category": "Postres y cafés",
     "priceCents": 200,
     "spriteIndex": 38
   },
   {
     "id": "P040",
     "name": "Café",
-    "category": "Postres",
+    "category": "Postres y cafés",
     "priceCents": 205,
     "spriteIndex": 39
   },
   {
     "id": "P041",
     "name": "Té",
-    "category": "Postres",
+    "category": "Postres y cafés",
     "priceCents": 210,
     "spriteIndex": 40
   },
   {
     "id": "P042",
     "name": "Cruasán",
-    "category": "Postres",
+    "category": "Postres y cafés",
     "priceCents": 175,
     "spriteIndex": 41
   },
   {
     "id": "P043",
     "name": "Trenza",
-    "category": "Postres",
+    "category": "Postres y cafés",
     "priceCents": 150,
     "spriteIndex": 42
   },
   {
     "id": "P044",
-    "name": "Madalena",
-    "category": "Postres",
+    "name": "Magdalena",
+    "category": "Postres y cafés",
     "priceCents": 50,
     "spriteIndex": 43
   },
   {
     "id": "P045",
     "name": "Macaron",
-    "category": "Postres",
+    "category": "Postres y cafés",
     "priceCents": 115,
     "spriteIndex": 44
   },
   {
     "id": "P046",
     "name": "Muffin",
-    "category": "Postres",
+    "category": "Postres y cafés",
     "priceCents": 230,
     "spriteIndex": 45
   },
   {
     "id": "P047",
     "name": "Pastel",
-    "category": "Postres",
+    "category": "Postres y cafés",
     "priceCents": 350,
     "spriteIndex": 46
   },
   {
     "id": "P048",
     "name": "Capuchino",
-    "category": "Postres",
+    "category": "Postres y cafés",
     "priceCents": 300,
     "spriteIndex": 47
   },
   {
     "id": "P049",
-    "name": "Corazón chocolate",
-    "category": "Postres",
+    "name": "Corazón de chocolate",
+    "category": "Postres y cafés",
     "priceCents": 150,
     "spriteIndex": 48
   },
   {
     "id": "P050",
-    "name": "Canastillo chocolate",
-    "category": "Postres",
+    "name": "Canastillo de chocolate",
+    "category": "Postres y cafés",
     "priceCents": 355,
     "spriteIndex": 49
   },
   {
     "id": "P051",
     "name": "Yogur con cereales",
-    "category": "Postres",
+    "category": "Postres y cafés",
     "priceCents": 215,
     "spriteIndex": 50
   }
