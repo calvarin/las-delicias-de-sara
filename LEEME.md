@@ -9,6 +9,7 @@
 - imagenes/productos-sprites.jpg: mapa regular de 7 columnas y 8 filas.
 - imagenes/logo-sara.jpg: logo.
 - imagenes/carta-qr.jpg: QR de la carta digital.
+- imagenes/favicon-32.png y imagenes/apple-touch-icon.png (180×180): icono de la pestaña y de la pantalla de inicio del iPad, recortados de la cabeza del logo.
 
 Todos los archivos de código están sin minificar. No hay imágenes en Base64, bibliotecas externas, herramientas de compilación ni dependencias.
 
