@@ -127,9 +127,9 @@ function lines(controls) {
     <div class="line">
       <span class="name">${product(id).name}</span>
       ${controls ? `<button data-minus="${id}" aria-label="Quitar unidad">−</button>` : ""}
-      <b>${quantity}</b>
+      <b class="line-qty">${quantity}</b>
       ${controls ? `<button data-add="${id}" aria-label="Añadir unidad">+</button>` : ""}
-      <span>${eur(product(id).priceCents * quantity)}</span>
+      <span class="line-price">${eur(product(id).priceCents * quantity)}</span>
     </div>
   `).join("");
 }

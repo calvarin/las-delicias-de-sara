@@ -279,6 +279,23 @@ dialog::backdrop {
   min-width:0;
 }
 
+/* Ancho fijo para que −, cantidad, + y precio queden en columna
+   aunque cambie el número de cifras (hasta 99 uds. y 999,99 €). */
+.line-qty {
+  flex-shrink:0;
+  min-width:2.5ch;
+  text-align:center;
+  font-variant-numeric:tabular-nums;
+}
+
+.line-price {
+  flex-shrink:0;
+  min-width:8.5ch;
+  text-align:right;
+  white-space:nowrap;
+  font-variant-numeric:tabular-nums;
+}
+
 .line button {
   flex-shrink:0;
   width:44px;
